@@ -8,7 +8,7 @@ An application of tasks control using ReactJS and TypeScript. Challenge proposed
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-process">Process</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#what-i-learned">What I Learned</a>
+  <a href="#-what-i-learned">What I Learned</a>
 </p>
 
 <br>

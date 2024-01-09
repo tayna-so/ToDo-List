@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+p {
+  margin-block: 0em;
+}
+
 body {
   background: var(--gray-600);
   margin: auto 0;

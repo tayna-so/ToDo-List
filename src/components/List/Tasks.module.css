@@ -26,7 +26,12 @@
   color: var(--gray-100);
   line-height: 140%;
   font-size: 14px;
-  margin: 0;
+  user-select: none;
+}
+
+.paragraph-checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
 }
 
 .item label input[type="checkbox"] {
@@ -36,7 +41,6 @@
 .checkbox {
   width: 1.125rem;
   height: 1.125rem;
-  padding: 0.2rem;
 
   display: flex;
   align-items: center;
@@ -50,8 +54,19 @@
   border: 2px solid var(--blue);
 }
 
-.checkbox-checked {
+.checkbox-unchecked:hover {
+  background-color: var(--blue-dark);
+}
 
+.checkbox-checked {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+  color: var(--gray-100);
+}
+
+.checkbox-checked:hover {
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
 }
 
 .item button {
