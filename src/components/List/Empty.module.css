@@ -3,6 +3,7 @@
   padding: 64px 24px 64px;
   border-radius: 8px;
   border-top: 1px solid var(--gray-400);
+  margin: 0 10px 0;
 }
 
 .container p {

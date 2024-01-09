@@ -9,7 +9,7 @@
 
   border-radius: 8px;
   padding: 1rem;
-  margin: 0 10px 10px;
+  margin: 0 10px 12px;
 }
 
 .item div {
@@ -34,9 +34,8 @@
 }
 
 .checkbox {
-  background: var(--purple-dark);
-  color: var(--gray-100);
   width: 1.125rem;
+  height: 1.125rem;
   padding: 0.2rem;
 
   display: flex;
@@ -44,6 +43,15 @@
   justify-content: center;
 
   border-radius: 100%;
+  transition: 0.2s all;
+}
+
+.checkbox-unchecked {
+  border: 2px solid var(--blue);
+}
+
+.checkbox-checked {
+
 }
 
 .item button {
