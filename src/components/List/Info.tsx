@@ -1,15 +1,24 @@
 import styles from "./Info.module.css";
 
-export function Info() {
+interface Props {
+  tasksCreated: number
+  checkedTasks: number
+}
+
+export function Info({ tasksCreated, checkedTasks }: Props) {
   return (
     <div className={styles.info}>
       <div className={styles.created}>
         <strong>Tarefas Criadas</strong>
-        <span>0</span>
+        <span>{tasksCreated}</span>
       </div>
       <div className={styles.done}>
         <strong>Concluídas</strong>
-        <span>0 de 0</span>
+        <span>
+          {tasksCreated === 0
+            ? tasksCreated
+            : `${checkedTasks} de ${tasksCreated}`}
+        </span>
       </div>
     </div>
   );

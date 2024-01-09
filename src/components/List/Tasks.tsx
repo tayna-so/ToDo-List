@@ -1,26 +1,41 @@
 import { Check, Trash } from "phosphor-react";
+
+import { ITask } from '../../App'
+
 import styles from "./Tasks.module.css";
 
-interface TasksProps {
-  content: string;
-  onDeleteTask: (comment: string) => void;
+interface Props {
+  content: ITask
+  onDeleteTask: (id: number) => void
+  toggleTaskStatus: ({ id, value }: { id: number; value: boolean }) => void
 }
 
-export function Tasks({ content, onDeleteTask }: TasksProps) {
+export function Tasks({ content, onDeleteTask, toggleTaskStatus }: Props) {
   function handleDeleteTask() {
-    onDeleteTask(content);
+    onDeleteTask(content.id);
   }
+
+  function handleToggleTask() {
+    toggleTaskStatus({ id: content.id, value: !content.isChecked })
+  }
+
+  const checkboxChecked = content.isChecked
+    ? styles['checkbox-checked']
+    : styles['checkbox-unchecked']
+  const paragraphChecked = content.isChecked
+    ? styles['paragraph-checked']
+    : ''
 
   return (
     <div className={styles.item}>
       <div>
-        <label htmlFor="checkbox">
-          <input readOnly type="checkbox" />
-          <span className={styles.checkbox}>
-            <Check size={12}/>
+        <label htmlFor="checkbox" onClick={handleToggleTask}>
+          <input readOnly type="checkbox" checked={content.isChecked} />
+          <span className={`&{styles.checkbox} &{checkboxChecked}`}>
+              {content.isChecked && <Check size={12} />}
           </span>
-          <p className={styles.paragraph}>
-            {content}
+          <p className={`&{styles.paragraph} &{paragraphChecked}`}>
+            {content.text}
           </p>
         </label>
       </div>
