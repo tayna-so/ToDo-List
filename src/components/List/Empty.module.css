@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  padding: 64px 24px 64px;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.container p {
+  padding-top: 1rem;
+  line-height: 140%;
+}

@@ -1,0 +1,26 @@
+.info {
+  margin: 0 10px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.created strong {
+  color: var(--blue);
+  font-size: 14px;
+}
+
+.done strong {
+  color: var(--purple);
+  font-size: 14px;
+}
+
+.created span,
+.done span {
+  color: var(--gray-200);
+  font-weight: bold;
+  font-size: 12px;
+  background: var(--gray-400);
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+  margin-left: 8px;
+}
