@@ -1,4 +1,4 @@
-<h1 align="center"> ToDo List </h1>
+<h1 align="center"> ToDo List ☑️</h1>
 
 <p align="center">
 An application of tasks control using ReactJS and TypeScript. Challenge proposed by Rocketseat.
@@ -29,10 +29,11 @@ This project has these funcionalities:
 - Remove a task from the list
 - Show task completion progress
 
+[ToDoVideo.webm](https://github.com/tayna-so/ToDo-List/assets/50917624/7b9d8e00-e441-43ab-a90c-2553f9dc5e30)
 
 ## 🚀 Process
 
-First of all, I created all the **components** and **css modules** files following a figma project.
+First of all, I created all the **components** and **css modules** files following the [figma project](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate).
 
 Next, I've thought about the logical of the tasks and how to make them appear on the screen. First I've choose to select them by content, but then it has shown some bugs when I deleted one task with the same content of another. So I've changed all the logic for **select by ID**.
 
