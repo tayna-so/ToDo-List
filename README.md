@@ -13,7 +13,7 @@ An application of tasks control using ReactJS and TypeScript. Challenge proposed
 
 <br>
 
-## 📦 Technologies
+## ⚡ Technologies
 
 - Vite
 - React.js
@@ -32,8 +32,20 @@ This project has these funcionalities:
 
 ## 🚀 Process
 
-This project is still ongoing.
-- (SCREENSHOTS)
+First of all, I created all the **components** and **css modules** files following a figma project.
+
+Next, I've thought about the logical of the tasks and how to make them appear on the screen. First I've choose to select them by content, but then it has shown some bugs when I deleted one task with the same content of another. So I've changed all the logic for **select by ID**.
+
+Since I've made it, it was more easier to manipulate the lists with `map()`, and to delete the task using `filter()`. After that, I implemented "check" and "uncheck" functionalities, using **condicional rendering** and **template literals**.
+
+I also made more functionalities like:
+  - responsive app
+  - prevent the images from being draggable or selectable
+  - prevent the user to add an empty task
+  - add an alert to make sure that the user wants to delete the task
+  - add a favicon :)
+
+This was my first project using ReactJS, and during this project I've learned important **foundation concepts**.
 
 ## 🔖 What I Learned
 
@@ -48,4 +60,4 @@ During this project, I've practiced important concepts of ReactJS:
 
 ---
 
-Made with ♥ by Tayná Sousa :wave:
+*Made with ♥ by Tayná Sousa*
