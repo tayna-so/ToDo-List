@@ -34,7 +34,7 @@ export function Tasks({ content, onDeleteTask, toggleTaskStatus }: Props) {
           <span className={`${styles.checkbox} ${checkboxChecked}`}>
               {content.isChecked && <Check size={12} />}
           </span>
-          <p className={`&{styles.paragraph} ${paragraphChecked}`}>
+          <p className={`${styles.paragraph} ${paragraphChecked}`}>
             {content.text}
           </p>
         </label>

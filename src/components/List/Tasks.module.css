@@ -27,6 +27,7 @@
   line-height: 140%;
   font-size: 14px;
   user-select: none;
+  margin-block: 0em;
 }
 
 .paragraph-checked {
@@ -48,6 +49,7 @@
 
   border-radius: 100%;
   transition: 0.2s all;
+  cursor: pointer;
 }
 
 .checkbox-unchecked {
